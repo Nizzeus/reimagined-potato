@@ -4,7 +4,7 @@ let data = [
 ]
 
 function readAll() {
-    localStorage.setItem("object", data);
+    localStorage.setItem("object", JSON.stringify(data));
     var tabledata = document.querySelector(".data_table");
 
     var object = localStorage.getItem('object');
