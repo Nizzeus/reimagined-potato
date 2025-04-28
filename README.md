@@ -7,6 +7,6 @@ Painamalla Add Course -nappia, käyttäjä voi syöttää kurssin nimen ja arvos
 
 Jos listalla on kursseja, käyttäjä voi poistaa niitä painamalla Delete -nappia.
 
--
+---
 
 En saanut muokkausominaisuutta toimimaan, enkä saanut kursseja tallentumaan sivulle, eli ne katoavat, kun lataa sivun uudelleen.
