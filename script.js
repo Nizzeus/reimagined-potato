@@ -1,7 +1,4 @@
-let data = [
-    {id: 1, course: "Databases", grade: 4},
-    {id: 2, course: "Software Production", grade: 5}
-]
+let data = []
 
 function readAll() {
     localStorage.setItem("object", JSON.stringify(data));
@@ -34,7 +31,7 @@ function add() {
     var course = document.querySelector(".course").value;
     var grade = document.querySelector(".grade").value;
 
-    var newObj = {id: 3, course: course, grade: grade};
+    var newObj = {id: 1, course: course, grade: grade};
     data.push(newObj);
 
     document.querySelector(".create_form").style.display = "none";
