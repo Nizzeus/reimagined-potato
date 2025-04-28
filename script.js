@@ -44,6 +44,7 @@ function add() {
 }
 
 function edit(id) {
+    document.querySelector(".create_form").style.display = "none";
     document.querySelector('.update_form').style.display = "block";
     var obj = data.find(rec => rec.id === id);
     document.querySelector('.ucourse').value = obj.course;
@@ -59,9 +60,10 @@ function update() {
     var index = data.findIndex(rec => rec.id === id);
     data[index] = {id, course, grade};
 
+    document.querySelector(".create_form").style.display = "block";
     document.querySelector('.update_form').style.display = "none";
     
-    readAll()
+    readAll();
 }
 
 function delet(id) {
