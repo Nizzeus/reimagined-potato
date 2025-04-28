@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body onload="readAll()">
+    <header>
+        <h1>Jimi Ikola</h1>
+        <h2>NTIS23K</h2>
+    </header>
+    <div class="container">
+        <div class="form_container">
+            <div class="add_div">
+                <button onclick="create()">Add Course</button>
+            </div>
+            <form class="create_form">
+                <input type="text" class="course" placeholder="Enter course name"/>
+                <input type="number" class="grade" placeholder="Enter grade"/>
+                <button type="button" onclick="add()">Add Course</button>
+            </form>
+            <form class="update_form">
+                <input type="text" hidden class="id"/>
+                <input type="text" class="ncourse"/>
+                <input type="number" class="ngrade"/>
+                <button type="button" onclick="update()">Update</button>
+            </form>
+            <table>
+                <h3>My Courses</h3>
+                <thead>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data_table"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
